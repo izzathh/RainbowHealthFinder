@@ -1,0 +1,32 @@
+.message-list-box {
+    max-height: 200px;
+    overflow-y: auto;
+    pointer-events: all !important
+}
+
+.message-box {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.user-message {
+    background-color: #3498db;
+    color: #fff;
+}
+
+logo-elements-message-list {
+    width: 600px;
+    pointer-events: all !important;
+    background-color: #fdecff;
+    height: 590px;
+}
+
+.other-message {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.message {
+    font-size: 14px;
+}

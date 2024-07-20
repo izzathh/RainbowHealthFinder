@@ -1,0 +1,511 @@
+/* body {
+    background-color: #fff1f1;
+} */
+#root {
+    max-width: 1526px;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+.report-page {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f6edff;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.select-input-sec {
+    row-gap: 5px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#root .report-page .filter-grid .date-container-sec .date-filter-all-data .date-filter-input .react-datepicker-popper {
+    top: -20px !important;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.date-container-sec .date-filter-all-data .date-filter-input .react-datepicker__tab-loop {
+    position: relative;
+}
+
+.MuiPaper-root {
+    min-width: 200px !important;
+    width: 240px !important;
+    max-width: 300px !important;
+}
+
+.MuiPaper-root::-webkit-scrollbar {
+    width: 5px;
+}
+
+.MuiPaper-root li.MuiButtonBase-root {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+span.MuiTypography-root {
+    font-size: 15px;
+    font-weight: 500;
+    text-wrap: balance;
+    line-height: 20px;
+}
+
+span.MuiButtonBase-root.MuiCheckbox-root {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.MuiPaper-root li.MuiButtonBase-root:hover {
+    background-color: #bb76f9c2;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected {
+    background-color: #dfbcff7d;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #a855f7 !important;
+}
+
+.date-filter-input {
+    position: relative;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+nav.reports-page-header {
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    padding: 15px 20px;
+    max-width: 100%;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #fffbfb;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.rainbow-logo-report {
+    width: 11rem;
+}
+
+.page-title h1 {
+    font-size: xx-large;
+    color: #000000f0;
+    font-weight: 700;
+}
+
+.reports-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.filter-btns {
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btns .filter-btn-par {
+    width: 11rem;
+    display: flex;
+    height: 10rem;
+    color: #000;
+    gap: 5px;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background-color: #dfbcff;
+}
+
+.filter-btn-par img {
+    width: 6rem;
+    border-radius: 1rem;
+}
+
+.datatable-container {
+    overflow-x: scroll;
+    flex-direction: column;
+    width: 90%;
+}
+
+.datatable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.datatable th,
+.datatable td {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #a855f7;
+    color: white;
+}
+
+.pagination .active a {
+    background-color: #a855f7;
+    color: white;
+    border-color: #a855f7;
+    cursor: default;
+}
+
+.pagination .disabled a {
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
+
+.pagination .break-me a {
+    background-color: transparent;
+    border: none;
+    color: #6c757d;
+    cursor: default;
+}
+
+.page-info {
+    margin-bottom: 0.5rem;
+}
+
+.tooltip-left {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out, visibility 0s linear 0.5s, opacity 0.3s ease-out;
+}
+
+.tooltip-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out, visibility 0s linear;
+}
+
+.download-exel-btn {
+    color: #fff;
+}
+
+.filter-btn-par strong {
+    font-weight: bolder;
+    background-color: #e8d9ff;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.filter-btn-par p {
+    font-weight: 700;
+}
+
+.exel-download-home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.download-exel-btn img {
+    width: 2.5rem;
+    filter: brightness(0.5) invert(1);
+}
+
+/* Customized by chinnapparaj 21.05.2024*/
+.react-datatable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.react-datatable::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.react-datatable::-webkit-scrollbar-thumb {
+    background: #debbff;
+    border-radius: 10px;
+}
+
+.react-datatable::-webkit-scrollbar-thumb:hover {
+    background: #b598d1;
+}
+
+/* Customized by chinnapparaj 21.05.2024*/
+.datatable-tail {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-contents-tail {
+    background-color: #f9f9f9;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+/* .dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    width: 60%;
+} */
+/* Edited By Chinnapparaj 18.05.2024 */
+
+.selectionn-strong {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all-btn {
+    background-color: #a855f7;
+    margin-top: 10px;
+    margin-left: 3rem;
+    padding: 7px 20px;
+    color: #fff;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #8d47ce;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+.filter-grid {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    width: 93%; */
+    gap: 2rem;
+    margin: 0px auto;
+}
+
+.date-container-sec {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.exel-download-home-btn img {
+    filter: brightness(0);
+}
+
+.datatable-tail tr.table-contents-tail:hover {
+    background-color: #dfbcff80;
+}
+
+.datatable-tail tr.table-contents-tail:nth-child(even) {
+    background-color: #dfbcff59;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+.filter-container {
+    background-color: #dfbcff;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    width: 40%;
+    height: 10rem;
+    overflow-y: scroll;
+}
+
+.filtered-report-counts {
+    border-radius: 1rem;
+}
+
+.filtered-report-counts h1 {
+    padding: 6px;
+    font-weight: 700;
+}
+
+.filtered-report-counts>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.filter-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.filter-container::-webkit-scrollbar-thumb {
+    background: #3333333d;
+}
+
+.filter-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+.filter-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.count-sec {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    background-color: #a855f7bf;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.count-sec p {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+.table-head-tail {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #dfbcff;
+}
+
+th:nth-child(1) {
+    width: 12rem;
+}
+
+th:nth-child(2),
+th:nth-child(7),
+th:nth-child(8) {
+    width: 9rem;
+}
+
+th:nth-child(3),
+th:nth-child(10) {
+    width: 10rem;
+}
+
+th:nth-child(6) {
+    width: 12rem;
+}
+
+th:nth-child(13) {
+    width: 11rem;
+}
+
+th:nth-child(15) {
+    width: 13rem;
+}
+
+th:nth-child(16),
+th:nth-child(17) {
+    width: 15rem;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+.date-filter-all-data {
+    display: block;
+    width: 20%;
+}
+
+.react-datepicker-wrapper {
+    display: block
+}
+
+.date-filter-input .react-datepicker__input-container {
+    margin-bottom: 20px;
+    /* display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center; */
+}
+
+.react-datatable {
+    height: 40rem;
+    background-color: #fff;
+}
+
+.filter-container .MuiButtonBase-root {
+    margin-bottom: 10px !important;
+}
+
+/* Edited By Chinnapparaj 18.05.2024 */
+input.datepicker-custom {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.date-filter-all-data button {
+    background-color: #a855f7;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.date-filter-all-data button:hover {
+    background-color: #7d3eb8;
+}

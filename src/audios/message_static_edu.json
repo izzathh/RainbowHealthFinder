@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "soundFile": "E:\\OfficeProjects\\Rainbow-Healthcare\\Back-end-D\\messages\\message_audio.wav",
+    "duration": 3.81
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.45, "value": "B" },
+    { "start": 0.45, "end": 0.73, "value": "C" },
+    { "start": 0.73, "end": 0.80, "value": "E" },
+    { "start": 0.80, "end": 0.87, "value": "G" },
+    { "start": 0.87, "end": 1.08, "value": "B" },
+    { "start": 1.08, "end": 1.36, "value": "C" },
+    { "start": 1.36, "end": 1.43, "value": "B" },
+    { "start": 1.43, "end": 1.50, "value": "F" },
+    { "start": 1.50, "end": 1.58, "value": "A" },
+    { "start": 1.58, "end": 1.68, "value": "D" },
+    { "start": 1.68, "end": 1.89, "value": "B" },
+    { "start": 1.89, "end": 2.03, "value": "C" },
+    { "start": 2.03, "end": 2.10, "value": "B" },
+    { "start": 2.10, "end": 2.17, "value": "H" },
+    { "start": 2.17, "end": 2.24, "value": "C" },
+    { "start": 2.24, "end": 2.45, "value": "B" },
+    { "start": 2.45, "end": 2.73, "value": "C" },
+    { "start": 2.73, "end": 3.01, "value": "B" },
+    { "start": 3.01, "end": 3.15, "value": "E" },
+    { "start": 3.15, "end": 3.29, "value": "C" },
+    { "start": 3.29, "end": 3.36, "value": "B" },
+    { "start": 3.36, "end": 3.81, "value": "X" }
+  ]
+}

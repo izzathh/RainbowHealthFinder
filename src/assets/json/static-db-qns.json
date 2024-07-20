@@ -1,0 +1,54 @@
+[
+    {
+        "question": "Which of the following best represents your gender identity?, or Self-describe using the text box.",
+        "field": "gender"
+    },
+    {
+        "question": "Which of the following best represents your sexual orientation?, or Self-describe using the text box.",
+        "field": "sexualOrientation"
+    },
+    {
+        "question": "Thank you for choosing the services. Below are the available services based on your health conditions, please choose any of the service.",
+        "field": "serviceType"
+    },
+    {
+        "question": "What sex were you assigned at birth?",
+        "field": "birthSex"
+    },
+    {
+        "question": "Below are the population category that you like to be identified, please choose any of the categories.",
+        "field": "populationDetails"
+    },
+    {
+        "question": "Below are the Cost models that are available, please choose any of the model.",
+        "field": "costModel"
+    },
+    {
+        "question": "Please let us know your proximity to refer a nearby doctor.",
+        "field": "proximitySlot"
+    },
+    {
+        "question": "Please provide feedback on the accuracy of the advice provided.",
+        "field": "accuracyOfTheAdvice"
+    },
+    {
+        "question": "Please provide feedback on the accuracy of the conversation summary.",
+        "field": "accuracyOfTheConversation"
+    },
+    {
+        "question": "Please provide feedback, how likely you are to contact the health services provided",
+        "field": "healthServicesProvided"
+    },
+    {
+        "question": "Please provide feedback on overall experience using this avatar-based health navigator.",
+        "field": "overallExperience"
+    },
+    {
+        "question": "How could we improve this website, service, or better tailor it to your needs?",
+        "field": "HowToImprove"
+    },
+    {
+        "question": "Please provide your email address if you would like us to follow up with you about this service experience.",
+        "field": "emailAddress"
+    }
+]
